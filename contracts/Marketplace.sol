@@ -17,5 +17,8 @@ contract NFTMarketplace is Ownable {
 
     mapping(uint256 => NFTItem) private _items;
 
+    event ItemCreated(uint256 indexed itemId, address indexed creator, string uri, uint256 price);
+    event ItemSold(uint256 indexed itemId, address indexed buyer, uint256 price);
+
 }
 
